@@ -19,7 +19,7 @@ defmodule Mix.Tasks.Search do
       {:ok, results} ->
         IO.puts("Search results for #{package_name}:")
         Enum.each(results, fn result ->
-          IO.puts("  - #{IO.ANSI.green()}#{result["name"]}#{IO.ANSI.reset()}: #{result["meta"]["description"]}")
+          IO.puts("  - #{IO.ANSI.green()}#{result["name"]}#{IO.ANSI.reset()} #{IO.ANSI.white()}#{IO.ANSI.bright()}#{result["latest_version"]}#{IO.ANSI.reset()} : #{result["meta"]["description"]}")
         end)
 
       {:error, reason} ->
