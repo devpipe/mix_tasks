@@ -7,3 +7,6 @@
 
 - Watch : Watches project files and restarts `mix run --no-halt` on changes
   * ```$ mix watch```
+
+- Search : Searches Hex.pm for a package
+  * ```$ mix search http```
